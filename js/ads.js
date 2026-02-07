@@ -15,3 +15,4 @@ export async function showMonetagAd(userRef, adsWatched) {
     alert(`+${reward} TON earned`);
   });
 }
+
