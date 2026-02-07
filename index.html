@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>AdTONX</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="https://cdn.tgads.space/assets/js/adexium-widget.min.js"></script>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- SPLASH -->
+<div id="splash">
+  <img src="assets/logo.png" class="logo" />
+  <div class="loader"></div>
+</div>
+
+<!-- APP -->
+<div id="app" class="hidden">
+  <header>AdTONX</header>
+
+  <div class="card">
+    <div class="label">Balance</div>
+    <div id="balance">0.000 TON</div>
+  </div>
+
+  <button id="watchAd">▶ Watch Ad</button>
+
+  <div class="progress">
+    Ads watched today: <span id="adsToday">0</span>/3000
+  </div>
+</div>
+
+<div class="card">
+  <h3>🏆 Weekly Leaderboard</h3>
+  <ul id="leaderboard"></ul>
+</div>
+<div class="card">
+  <h3>📝 Tasks</h3>
+  <div id="tasks"></div>
+</div>
+
+<div class="card">
+  <h3>💼 Wallet</h3>
+  <input id="walletInput" placeholder="TON Wallet Address">
+  <button id="saveWallet">Save Wallet</button>
+
+  <input id="withdrawAmount" placeholder="Amount TON">
+  <button id="withdrawBtn">Withdraw</button>
+</div>
+
+
+<audio id="rewardSound" src="assets/reward.mp3"></audio>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
